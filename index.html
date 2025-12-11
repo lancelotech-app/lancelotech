@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lancelot Development Group - Mobile Social Apps</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background-color: #fafafa;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    p, ul, ol {
+      margin-bottom: 1rem;
+    }
+    .tagline {
+      font-weight: 300;
+      color: #7f8c8d;
+      margin-bottom: 2rem;
+    }
+    .section {
+      background: white;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .app-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid;
+    }
+    .app-card.kismaze { border-left-color: #ec4899; }
+    .app-card.emmeffe { border-left-color: #10b981; }
+    .app-card.pantheon { border-left-color: #f59e0b; }
+    .app-card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .app-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    .kismaze-icon { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+    .emmeffe-icon { background: linear-gradient(135deg, #10b981, #3b82f6); }
+    .pantheon-icon { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+    .play-store-badge {
+      display: inline-block;
+      background: #34a853;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .play-store-badge:hover {
+      background: #2d8c47;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+    .status-live { background: #10b981; color: white; }
+    .contact-section {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    .contact-section a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .feature-list li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .feature-list li:before {
+      content: "✓";
+      color: #10b981;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lancelot Development Group</h1>
+  <p class="tagline">Building engaging social experiences for Android</p>
+
+  <div class="section">
+    <h2>Our Social Applications</h2>
+    <p>Discover our suite of native Android applications designed to connect people through video, friendship, and sports.</p>
+    
+    <div class="app-grid">
+      <!-- KISMAZE Card -->
+      <div class="app-card kismaze">
+        <h3>
+          <span class="app-icon kismaze-icon">K</span>
+          KISMAZE
+        </h3>
+        <p><strong>Share Your Video</strong></p>
+        <p>A fun-first social video-sharing platform for vertical shorts and wide-format videos.</p>
+        <ul class="feature-list">
+          <li>Dual video formats</li>
+          <li>Easy sharing</li>
+          <li>Social engagement</li>
+          <li>Native performance</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=com.lancelot.kismaze" class="play-store-badge">
+          Download
+        </a>
+      </div>
+      
+      <!-- EMMEFFE Card -->
+      <div class="app-card emmeffe">
+        <h3>
+          <span class="app-icon emmeffe-icon">E</span>
+          EMMEFFE
+        </h3>
+        <p><strong>Make Friends</strong></p>
+        <p>Location-based social network to meet new friends locally through maps and shared interests.</p>
+        <ul class="feature-list">
+          <li>Interactive map</li>
+          <li>Profile categories</li>
+          <li>Event creation</li>
+          <li>Private messaging</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=com.lancelot.emmeffe" class="play-store-badge">
+          Download
+        </a>
+      </div>
+      
+      <!-- PANTHEON Card -->
+      <div class="app-card pantheon">
+        <h3>
+          <span class="app-icon pantheon-icon">P</span>
+          PANTHEON
+        </h3>
+        <p><strong>Sports & Entertainment Network</strong></p>
+        <p>Platform for sports enthusiasts to share videos, highlights, and athletic content.</p>
+        <ul class="feature-list">
+          <li>Sports video sharing</li>
+          <li>Multiple categories</li>
+          <li>Community challenges</li>
+          <li>Social features</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=com.lancelot.pantheon" class="play-store-badge">
+          Download
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>About Lancelot Development Group</h2>
+    <p>We are a mobile development studio passionate about creating meaningful social connections through native Android applications. Our mission is to build applications that foster genuine engagement and community.</p>
+    
+    <p><strong>Our Philosophy:</strong> Native performance, intuitive design, and real social value.</p>
+    
+    <p>Each of our three flagship apps addresses a different aspect of digital socialization—from casual video sharing to location-based friendship building and sports community engagement.</p>
+  </div>
+
+  <div class="section">
+    <h2>Technical Excellence</h2>
+    
+    <ul>
+      <li><strong>100% Native Android:</strong> Built with Java for optimal performance</li>
+      <li><strong>Modern Architecture:</strong> Clean Architecture with MVVM pattern</li>
+      <li><strong>Cloud Integration:</strong> Firebase for real-time features and storage</li>
+      <li><strong>Google Maps SDK:</strong> Precise location services</li>
+      <li><strong>Material Design 3:</strong> Beautiful, consistent user interfaces</li>
+    </ul>
+  </div>
+
+  <div class="contact-section">
+    <p><strong>Get in Touch</strong></p>
+    <p>Interested in collaboration, feedback, or partnership opportunities?</p>
+    <p>Contact: <a href="mailto:lancelotech@proton.me">lancelotech@proton.me</a></p>
+    <p>Download: <a href="https://github.com/lancelotech-app/lancelotech/releases/tag/1">https://github.com/lancelotech-app/lancelotech/releases/tag/1</a></p>
+  </div>
+
+  <footer>
+    <p><strong>Lancelot Development Group</strong> - Building connections through innovation.</p>
+    <p>© 2026 Lancelot Development Group. All rights reserved.</p>
+    <p>All applications available on Google Play Store for Android devices.</p>
+  </footer>
+
+</body>
+</html>
